@@ -22,7 +22,7 @@ function isAllValid(){
         return {value:false, message:`O X tem que estar entre 1 e ${Q.value - 1}`};
     }
 
-    return {value:true, message:`fodase, ta certo`};;
+    return {value:true, message:`ta certo`};;
 
 }
 
