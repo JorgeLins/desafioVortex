@@ -8,7 +8,9 @@ var resultado = document.querySelector(".resultado");
 
 function isAllValid(){
 
-
+    if(T.value == "" || Q.value == "" || X.value == ""){
+        return {value:false, message:`Preencha todos os campos`};
+    }
 
     if(T.value <= 0 || T.value > 24){
         return {value:false, message:"O T tem que estar entre 1 e 24"};
@@ -22,7 +24,9 @@ function isAllValid(){
         return {value:false, message:`O X tem que estar entre 1 e ${Q.value - 1}`};
     }
 
-    return {value:true, message:`ta certo`};;
+
+
+    return {value:true, message:`ta certo`};    
 
 }
 
@@ -31,7 +35,7 @@ function getIdEvent(event){
 }
 
 
-function customValidation(event){
+/* function customValidation(event){
 
     const field = event.target
 
@@ -63,9 +67,9 @@ function customValidation(event){
 }
 
 for ( field of fields ){
-    field.addEventListener("invalid", customValidation)
+    field.addEventListener("blur", customValidation)
 
-}
+} */
 
 function resetNumbers(){
 
@@ -99,7 +103,7 @@ function doCalculate(){
         spanError.classList.remove("active")
         spanError.innerHTML = ""
     } else {
-        
+        resultado.innerHTML = ""
         spanError.classList.add("active")
         spanError.innerHTML = res.message
     }
