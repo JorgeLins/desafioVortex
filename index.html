@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Vortex</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <section class="main-section">
+
+    <form action="">
+      <h2>
+        Calculo - Treino de Basquete
+      </h2>
+  
+      <div class="input" >
+        <input id="T" required type="number" />
+        <label>T</label>
+      </div>
+  
+  
+      <div class="input">
+        <input id="Q" required type="number" />
+        <label>Q</label>
+        <span></span>
+      </div>
+  
+      <div class="input">
+        <input id="X" required type="number" />
+        <label>X</label>
+      </div>
+  
+      <button onclick="doCalculate()" type="button">Enviar</button>
+  
+      <div class="res">
+        <h2>Resultado:</h2>
+        <span class="resultado"></span>
+      </div>
+      <span class="error"></span>
+  
+    </form>
+  </section>
+
+
+  <footer id="Footer" class="main-footer">
+    <a class="action" href="https://github.com/JorgeLins/" target="_blank">
+        <img src="assets/img/github.png" alt="githubfooter">
+    </a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #fd951f;
+    --bg-color: #130f0d;
+    --text-color: #f0f0f5;
+    --light-color: rgba(255, 255, 255, 0.04);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #130f0d;
+    color: #f0f0f5;
+}
+
+form {
+    background: rgba(41, 0, 0, 0.829);
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 32px auto;
+    padding: 32px 64px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    margin-bottom: 32px;
+}
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.res {
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+}
+
+input,
+button {
+    /* reset appeareance */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* box */
+    width: 100%;
+
+    padding: 16px 0;
+
+    border:none;
+    border-bottom: 1px solid var(--primary-color);
+
+    background-color: transparent;
+
+    outline: none;
+
+    /* text */
+    color: var(--text-color);
+    font-size: 1em;
+
+}
+
+button {
+    margin-top: 16px;
+    background-color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    color: rgba(255, 255, 255, 0.6) ;
+
+    transition: .4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+
+.input span.error {
+    display: flex;
+    
+    padding: 0;
+
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-left: 5px;
+    
+    
+    padding: 0;
+
+}
+
+.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+  
+.main-footer{
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    padding-top: 8px;
+    height: 60px;
+}
+
+.main-footer .action{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.main-section{
+    background-color: #680707;
+    height: 720px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border-bottom: 10px solid #ffffff;
+}
